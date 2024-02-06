@@ -1,21 +1,28 @@
-#accepts user input for variables
-pos = input("Input initial position: ")
-pos_float = float(pos)
-
-vel = input("Input initial velocity: ")
-vel_float = float(vel)
-
-acc = input("Input acceloration: ")
-acc_float = float(acc)
-
-t = input("Input time: ")
-t_float = float(t)
-
-#calculate input 
-def calculate(pos_float, vel_float, acc_float, t_float): 
-    result = float()
-    result = pos_float + vel_float*(t_float) + 1/2*(acc_float)*(t_float)*(t_float)
+def calculate_position(pos, vel, acc, t):
+    result = pos + vel * t + 0.5 * acc * t**2
     return result
 
-#print result
-print("the final position is: " + calculate(pos_float, vel_float, acc_float, t_float))
+def get_non_negative_float_input(prompt):
+    while True:
+        try:
+            value = float(input(prompt))
+            if value < 0:
+                print("Oops! Please enter a positive number.")
+            else:
+                return value
+        except ValueError:
+            print("Oops! That's not a valid number. Try again.")
+
+while True:
+    pos = get_non_negative_float_input("Initial position: ")
+    vel = get_non_negative_float_input("Initial velocity: ")
+    acc = get_non_negative_float_input("Acceleration: ")
+    t = get_non_negative_float_input("Time: ")
+
+    result = calculate_position(pos, vel, acc, t)
+    print("Final position:", result)
+
+    another_calculation = input("Do you want to calculate again? (yes/no): ").lower()
+    if another_calculation != 'yes':
+        print("Goodbye!")
+        break
