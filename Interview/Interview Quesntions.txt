@@ -1,0 +1,112 @@
+1. What is Python?
+    Python is a complex coding langauge that allows programers to communicate with a computer using understandable syntax
+    Python has many applicable advantages over other langauges as it is useful for server-sided web developemnt, software developement, 
+    and where I think pythons greatest strength lies is it's quick turn around for scripting. 
+
+2. What is a variable? 
+    In python, because there are not data set declarations as like in C (e.g. "int", "float") in python they use variables 
+    as a placeholder for a reference to any form of data declared by the programers. 
+
+3. What is a namespace? 
+    In python, a namespace is a system used by python to assisgn unique names to specific objects. 
+
+4. What is the difference between List and Tuple? 
+    In python, the difference between list and tuple is that a list can be altered after creation, while a tuple doesn't 
+    have the ability to change or be altered. 
+
+5. How can you convert a number to a string? 
+    By using pythons in-built function str(num) you have the ability to pass a number as a parameter and the resulting returned value 
+    will be a string 
+
+6. What are the rules for local and global variables? 
+    Local variables are values that are assigned to code blocks that cannot be altered outside of said code block. While global variables
+    are values that are assigned at the begininning of the execution of your code and can be accessed at anypoint within your code. 
+
+7. Explain how to generate random numbers.
+    In python, to generate a random number you firstly are going to want to import the random function into your code. After doing this, 
+    you will have the ability to use the function rand.randint(min-max), which is a function that will randomly generate am integer number from the given 
+    range of min and max which are both passed as parameters. 
+
+8. What is a dictionary?
+    in python, a dictionary is a collection of data objects that have an assigned key for easy access. 
+
+9. 9. What is the self keyword?
+    the self keyword is used when creating classes in python that allows the program to know the current instance of class that is being used. 
+    it helps python distiguish between different instances within a class of multiple instances. 
+
+10. 10. What are loop interruption statements?
+    They are functinos that allow you skip or break a loop based on certain conditions. If these conditions are met, for example, and the statements
+    break is used, it will stop the loop and continue down to the next line of code after the loop. 
+
+11. Explain List, Tuple, Set, and Dictionary and provide at least one instance where each of these collection types can be used.
+    A. List -> list is a collection of data that can be of any data type and can be altered after the creation of a list. 
+        1. it can be used when creating a list for people RSVPing to a birthday party, each time someone says they can come, you can add them or remove them to the list. 
+    B. Tuple -> unlike a list, a tuple cannot be changed or altered after the creation of its data. 
+        1. It can be used to store the cordinates of an address that wont change. 
+    C. Set -> is a collection of unique objects that are in no given order 
+        1. removing duplicates 
+    E. is a collection of data objects that have an assigned key for easy access
+        1. when compiling a collection of authers and the books that they have created 
+
+12. How is exception handling done? 
+    it allows you to better test your code and handle instances throughout your code that would cause crashes. This could be useful when it comes to debugging 
+    or handing a case where the user must try a different input, just for one example. 
+
+13. What does the '#' symbol do in Python? 
+    in python, the "#" allows you to add psuedocode to your code, it is a way to mark up your code using your own notes 
+    without adding to the functionality of your code.
+
+14. Write the command to get all keys from a dictionary. 
+    all_keys = my_dict.keys()
+
+15. What is range()? Give an example to explain it.
+    it provides a sequenctial range of data from the given passed parameter. 
+    #will print numbers 1-5
+    for num in range(5) 
+        print(num)
+
+16. What does the // arithmetic operator do?
+    it performs integer division. 
+
+17. What is a data type?
+    it is a type of value that is accecpted by the Python Langauge that allows for its value to be stored in a variable. 
+
+18. What are the basic data types that are supported by the language?
+    the different data types that are supported by the language include: Number based types, text based types, sequenctial types, boolean types and mapping types
+    (like a dictionary)
+
+19. How do you check whether the two variables are pointing to the same object?
+    to check to see is two varables are pointing to the same object, you can use the python syntax is. 
+
+20. What is for-else and while-else?
+    it is a loop that has a conditional fail statement that has an alternitive solution if the main conditional statement fails. 
+
+21. What does immutable mean in the context of programming?
+    immutable means that the code is hard-coded and does not have the ability to be altered after delcared. 
+
+22. What is a list in Python?
+    a list in python is a collection of data which has the ability to be altered and isn't conformed to a set size. Because of this, list can easily add items, remove items and change items with 
+    no issue
+
+23. What is a tuple in Python?
+    in python a typle is an immutable object which means once it is declared, the size cannot change, and the items within the tuple cannot change as well. 
+
+24. When do you choose a list over a tuple?
+    When working with a collection of data that you know must be altered throughout the process of the code. 
+
+25. How do you get the last value in a list or a tuple?
+last_value = my_list[-1]
+
+26. What is Index Out Of Range Error?
+    when the given index for a list exceeds the amount of items in the list. (you are accessing areas of memory with unrequested data)
+
+27. Why should a program close a file when it is finished using it?
+    you don't have control over the system that a user may choose to run your program, and in python if the program doesn't successfully close a 
+    file that it opened, it may cause the lost of data within the file. 
+
+28. Assume the variable names references a list of strings like ["John", "Sally", "Dale", "Jose", "Apryl"]. Write code that determines whether 'Sally' is in the names list. If it is, display the message 'Hello Sally'.  Otherwise, display the message 'No Sally.
+
+    if "Sally" in names:
+        print("Hello Sally")
+    else:
+        print("No Sally")
